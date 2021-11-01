@@ -1,0 +1,93 @@
+.body{
+    margin : 0 auto;
+}
+
+.containerPage{
+    margin: 1%;
+}
+.screen{
+    -padding:18px 24px
+}
+.time{
+    margin : 10px 0 0 0;
+    font-size: 40px;
+    background-color: yellow;
+    text-align: center;
+    padding: 30px 0;
+}
+.note{
+    
+    text-align: center;
+    display: flex;
+    margin : 20px 0 0 0;
+}
+.note_en_cours{
+    font-size: 35px;
+    background-color: aqua;
+    flex:1.35;
+    padding : 20px 0 0 0;
+}
+.note_suivante{
+    font-size: 30px;
+    background-color: rgb(131, 63, 63);
+    flex:1;
+    padding : 20px 0 0 0;
+}
+.notedessin{
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    
+}
+.Dessin_en_cours{
+    background-color: aqua;
+    flex:1.35;
+    padding : 20px 0 20px 0;
+}
+.Dessin_suivant{
+    background-color: rgb(131, 63, 63);
+    flex:1;
+    font-size: 30px;
+    padding : 20px 0 20px 0;
+}
+
+
+@media only screen and (min-width:400px)and (max-width:200000px){
+.containerPage{
+    margin: 1%;
+}
+.screen{
+    padding:18px 24px
+}
+.time{
+    font-size: 170px;
+    background-color: yellow;
+    text-align: center;
+}
+.note{
+    font-size: 170px;
+    text-align: center;
+    display: flex;
+}
+.note_en_cours{
+    background-color: aqua;
+    flex:2;
+}
+.note_suivante{
+    background-color: rgb(131, 63, 63);
+    flex:1;
+}
+.notedessin{
+    font-size: 120px;
+    text-align: center;
+    display: flex;
+}
+.Dessin_en_cours{
+    background-color: aqua;
+    flex:2;
+}
+.Dessin_suivant{
+    background-color: rgb(131, 63, 63);
+    flex:1;
+}
+}
