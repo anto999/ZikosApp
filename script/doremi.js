@@ -20,27 +20,31 @@ var NoteAuHasard=Math.floor(Math.random() * 7);
     while (true){
         var NoteAuHasardSuivante=Math.floor(Math.random() * 7);
         
+        for (i=0;i<4;i++){
+            console.log(NoteAuHasard);
+            playAudio();
+            document.getElementsByClassName("time")[0].innerHTML="O X X X";
+            document.getElementsByClassName("note_en_cours")[0].innerHTML=NoteEN[NoteAuHasard]+" : "+NoteFR[NoteAuHasard];
+            document.getElementsByClassName("Dessin_en_cours")[0].innerHTML=NoteDessin[NoteAuHasard];
+            document.getElementsByClassName("note_suivante")[0].innerHTML=NoteEN[NoteAuHasardSuivante]+" : "+NoteFR[NoteAuHasardSuivante];
+            document.getElementsByClassName("Dessin_suivant")[0].innerHTML=NoteDessin[NoteAuHasardSuivante];
+            
+            
+            await sleep(240);
+            document.getElementsByClassName("time")[0].innerHTML="X O X X";
+    
+            await sleep(240);
+            document.getElementsByClassName("time")[0].innerHTML="X X O X";
+            playAudio();
+    
+            //playAudio();
+            // audio.play();
+            await sleep(240);
+            document.getElementsByClassName("time")[0].innerHTML="X X X O";
+            await sleep(240);
+        }
         
-        console.log(NoteAuHasard);
-        playAudio();
-        document.getElementsByClassName("time")[0].innerHTML="O X X X";
-        document.getElementsByClassName("note_en_cours")[0].innerHTML=NoteEN[NoteAuHasard]+" : "+NoteFR[NoteAuHasard];
-        document.getElementsByClassName("Dessin_en_cours")[0].innerHTML=NoteDessin[NoteAuHasard];
-        document.getElementsByClassName("note_suivante")[0].innerHTML=NoteEN[NoteAuHasardSuivante]+" : "+NoteFR[NoteAuHasardSuivante];
-        document.getElementsByClassName("Dessin_suivant")[0].innerHTML=NoteDessin[NoteAuHasardSuivante];
-        
-        
-        await sleep(750);
-        document.getElementsByClassName("time")[0].innerHTML="X O X X";
 
-        await sleep(750);
-        document.getElementsByClassName("time")[0].innerHTML="X X O X";
-
-        playAudio();
-        // audio.play();
-        await sleep(750);
-        document.getElementsByClassName("time")[0].innerHTML="X X X O";
-        await sleep(750);
         NoteAuHasard=NoteAuHasardSuivante;
     }
     
