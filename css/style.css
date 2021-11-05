@@ -15,6 +15,13 @@
     text-align: center;
     padding: 30px 0;
 }
+
+.mesure{
+    margin : 10px 0 0 0;
+    font-size: 40px;
+    background-color: green;
+    text-align: center;
+}
 .note{
     
     text-align: center;
