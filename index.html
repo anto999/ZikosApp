@@ -13,7 +13,18 @@
     <div class="containerPage">
         
         <div class="screen">
-            <button onclick="playAudio()" type="button">Play Audio</button>
+            <form>
+                <label>Tempo :</label>
+                <input type="int" id="bpminput" name="bpminput" 
+                minlength="2" maxlength="3" size="10" value="100">
+             <!--   <button class="btnbpm"
+                type="button" onclick="test()">
+                  bpm(ms)
+                 </button>-->
+            </form>
+            <button onclick="playAudio()" type="button">Démarrez</button>
+            <button onclick="stopAudio()" type="button">Stop Audio</button>
+          
             <div class="mesure">1/2</div>
             <div class="time">
                 2
