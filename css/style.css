@@ -10,7 +10,7 @@
 }
 .time{
     margin : 10px 0 0 0;
-    font-size: 40px;
+    font-size: 30px;
     background-color: yellow;
     text-align: center;
     padding: 30px 0;
@@ -21,7 +21,32 @@
     font-size: 40px;
     background-color: green;
     text-align: center;
+   
 }
+
+.majmin{
+    text-align: center;
+    margin : 10px 0 0 0;
+    -background-color: red;
+    display: flex;
+
+}
+
+.majmin_encours{
+    font-size: 35px;
+    background-color: aqua;
+    flex:1.35;
+    padding : 20px 0 0 0;
+}
+
+.majmin_suivant{
+    text-align: center;
+    margin : 10px 0 0 0;
+    background-color: blue;
+    flex:1;
+    padding:10px 0;
+}
+
 .note{
     
     text-align: center;
@@ -59,9 +84,17 @@
 }
 
 
-@media only screen and (min-width:400px)and (max-width:200000px){
+@media only screen and (min-width:500px)and (max-width:200000px){
 .containerPage{
     margin: 1%;
+}
+
+.time{
+    margin : 10px 0 0 0;
+    font-size: 40px;
+    background-color: yellow;
+    text-align: center;
+    padding: 30px 0;
 }
 .screen{
     padding:18px 24px
@@ -71,6 +104,30 @@
     background-color: yellow;
     text-align: center;
 }
+
+.majmin{
+    text-align: center;
+    margin : 10px 0 0 0;
+    -background-color: red;
+    display: flex;
+
+}
+
+.majmin_encours{
+    font-size: 35px;
+    background-color: aqua;
+    flex:2;
+    padding : 20px 0 0 0;
+}
+
+.majmin_suivant{
+    text-align: center;
+    margin : 10px 0 0 0;
+    background-color: blue;
+    flex:1;
+    padding:10px 0;
+}
+
 .note{
     font-size: 170px;
     text-align: center;
