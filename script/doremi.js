@@ -1,92 +1,7 @@
-var NoteEN =["C","D","E","F","G","A","B"];
-var NoteFR =["DO","RE","MI","FA","SOL","LA","SI"];
-var NoteDessin =["032010","X00232","022100","133211","320033","002220","X24442"];
-var NoteDessinMajeur =["032010","X00232","022100","133211","320033","002220","X24442"];
-var NoteDessinMineur =["X35543","X00231","022000","X33111","355333","X02210","224432"];
-var NoteDessinRandom = ["032010","X00232","022100","133211","320033","002220","X24442","X35543","X00231","022000","X33111","355333","X02210","224432"];
-var NoteDessinUkuleleMajeur=["0003","2220","1402","2010","0232","2100","4322"];
 var audio = new Audio('audio_file.mp3');
 var x;//TEMPO
 var randomNote = false;
-
 document.getElementById("majmin").innerText="MAJEUR";
-
-function playAudio(){
-    audio = new Audio('audio_file.mp3');
-    MusicPlay= true;
-    console.log("audio");
-    tempo();
-    audio.play();   
-}
-
-function stopAudio(){
-   console.log("Stopaudio");
-   audio=new Audio('audio0_file.mp3');
-}
-
-function tempo(){
-    var x =  document.getElementById("bpminput").value;//en MilliSecondes
-    //console.log(x);
-    bpm=60000/x;
- }
-
- function majeur(){
-    NoteEN =["C","D","E","F","G","A","B"];
-    NoteFR =["DO","RE","MI","FA","SOL","LA","SI"];
-    randomNote = false;
-    NoteDessin=NoteDessinMajeur;
-    document.getElementById("majmin").innerText="MAJEUR";
- }
-
- function mineur(){
-    NoteEN =["C","D","E","F","G","A","B"];
-    NoteFR =["DO","RE","MI","FA","SOL","LA","SI"];
-    randomNote = false;
-    NoteDessin=NoteDessinMineur;
-    document.getElementById("majmin").innerText="MINEUR";
- }
-
- function random(){
-    NoteDessin=NoteDessinRandom;
-    NoteAuHasard=Math.floor(Math.random() * 14);
-    randomNote = true;
-    NoteEN =["C","D","E","F","G","A","B","C","D","E","F","G","A","B"];
-    NoteFR =["DO","RE","MI","FA","SOL","LA","SI","DO","RE","MI","FA","SOL","LA","SI"];
-    document.getElementById("majmin").innerText="RANDOM";
- }
-
- function ukulele(){
-    NoteDessin=NoteDessinUkuleleMajeur;
-    NoteEN =["C","D","E","F","G","A","B"];
-    NoteFR =["DO","RE","MI","FA","SOL","LA","SI"];
-    randomNote = false;
-    document.getElementById("majmin").innerText="UKULELE";
- }
-
- function less(){
-     x=document.getElementById("bpminput").value-1;
-    document.getElementById("bpminput").value=x;
- }
-
- function less10(){
-    x=document.getElementById("bpminput").value-10;
-    document.getElementById("bpminput").value=x;
- }
-
- function more(){
-    x=document.getElementById("bpminput").value;
-    x++;
-    document.getElementById("bpminput").value=x;   
- }
-
- function more10(){
-    x=document.getElementById("bpminput").value;
-    for (a=0;a<10;a++){
-        x++;
-    }
-    document.getElementById("bpminput").value=x;
- }
-
 const sleep = ms => new Promise(res => setTimeout(res, ms));
 var mesure = 0;
 var NoteAuHasard=Math.floor(Math.random() * 7);
@@ -98,7 +13,6 @@ document.getElementsByClassName("Dessin_suivant")[0].innerHTML=NoteDessin[NoteAu
 document.getElementsByClassName("mesure")[0].innerHTML="1/2";
 var MusicPlay = true;
 var bpm = 500;
-
     (async () => {
         while (MusicPlay == true){
             for (i=0;i<4;i++){

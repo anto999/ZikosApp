@@ -7,42 +7,43 @@
     <title>ZikApp</title>
 </head>
 <body>
- 
-    
-
     <div class="containerPage">
-        
         <div class="screen">
-            <form>
-                <label>Tempo :</label>
-                <input type="int" id="bpminput" name="bpminput" 
-                minlength="2" maxlength="3" size="10" value="100" min="50" max="300" readonly>
-            </form>
-            <button id="minus++" onclick="less10()">--</button>
-            <button id="minus" onclick="less()">-</button>
-            <button id="plus" onclick="more()">+</button>
-            <button id="plus++" onclick="more10()">++</button>
-            <button onclick="playAudio()" type="button">Démarrez</button>
-            <button onclick="stopAudio()" type="button">Stop Audio</button>
-            <button onclick="majeur()" type="button">majeur</button>
-            <button onclick="mineur()" type="button">mineur</button>
-            <button onclick="random()" type="button">random</button>
-            <button onclick="ukulele()" type="button">Ukulele</button>
-            
-          
+            <div class="tempo">
+                <form>
+                    <label>Tempo :</label>
+                    <input type="int" id="bpminput" name="bpminput" 
+                    minlength="2" maxlength="3" size="10" value="100" min="50" max="300" readonly>
+                </form>
+                <div class="speed_btn">
+                    <button id="minus++" class="btn_tempo" onclick="less10()">--</button>
+                    <button id="minus" class="btn_tempo" onclick="less()">-</button>
+                    <button id="plus" class="btn_tempo" onclick="more()">+</button>
+                    <button id="plus++" class="btn_tempo" onclick="more10()">++</button>
+                </div>
+            </div>
+            <div class="other_buttons">
+              <!--<button onclick="playAudio()" type="button">Démarrez</button>-->
+            <!--<button onclick="stopAudio()" type="button">Stop Audio</button>-->
+                <button class ="options_btn" onclick="majeur()" type="button">Majeur</button>
+                <button class ="options_btn" onclick="mineur()" type="button">Mineur</button>
+                <button class ="options_btn" onclick="maj7()" type="button">Majeur 7</button>
+                <button class ="options_btn" onclick="_7eme()" type="button">7eme</button>
+                <button class ="options_btn" onclick="mineur7()" type="button">Mineur 7</button>
+                <button class ="options_btn" onclick="_6eme()" type="button">6eme</button>
+                <button class ="options_btn" onclick="mineur6()" type="button">Mineur 6</button>
+                <button class ="options_btn" onclick="_9eme()" type="button">9eme</button>
+                <button class ="options_btn" onclick="random()" type="button">random</button>
+                <button class ="options_btn" onclick="ukulele()" type="button">Ukulele</button>
+            </div>
             <div class="mesure">1/2</div>
             <div class="time">
                 2
             </div>
            <div id ="majmin"class="majmin">
-               <div class="majmin_encours">
-
-               </div>
-               <div class="majmin_suivant">
-                   
-               </div>
+               <div class="majmin_encours"></div>
+               <div class="majmin_suivant"></div>
            </div>
-
             <div class="note">
                 <div class="note_en_cours"></div>
                 <div class="note_suivante">0</div>
@@ -53,7 +54,9 @@
             </div>
         </div>
     </div>
-    
 </body>
 </html>
+
+<script src="script/grilles-accords.js"></script>
+<script src="script/functions.js"></script>
 <script src="script/doremi.js"></script>
