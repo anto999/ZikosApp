@@ -16,19 +16,19 @@
             <form>
                 <label>Tempo :</label>
                 <input type="int" id="bpminput" name="bpminput" 
-                minlength="2" maxlength="3" size="10" value="100">
-             <!--   <button class="btnbpm"
-                type="button" onclick="test()">
-                  bpm(ms)
-                 </button>-->
+                minlength="2" maxlength="3" size="10" value="100" min="50" max="300" readonly>
             </form>
+            <button id="minus++" onclick="less10()">--</button>
+            <button id="minus" onclick="less()">-</button>
+            <button id="plus" onclick="more()">+</button>
+            <button id="plus++" onclick="more10()">++</button>
             <button onclick="playAudio()" type="button">Démarrez</button>
             <button onclick="stopAudio()" type="button">Stop Audio</button>
             <button onclick="majeur()" type="button">majeur</button>
             <button onclick="mineur()" type="button">mineur</button>
             <button onclick="random()" type="button">random</button>
             <button onclick="ukulele()" type="button">Ukulele</button>
-            <button onclick="popup()" type="button">popup</button>
+            
           
             <div class="mesure">1/2</div>
             <div class="time">

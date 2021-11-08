@@ -25,12 +25,14 @@
 }
 
 .majmin{
-    text-align: center;
     margin : 10px 0 0 0;
-    -background-color: red;
-    display: flex;
-
+    font-size: 40px;
+    background-color: green;
+    text-align: center;
+   
 }
+
+
 
 .majmin_encours{
     font-size: 35px;
@@ -106,11 +108,11 @@
 }
 
 .majmin{
-    text-align: center;
     margin : 10px 0 0 0;
-    -background-color: red;
-    display: flex;
-
+    font-size: 40px;
+    background-color: green;
+    text-align: center;
+   
 }
 
 .majmin_encours{
