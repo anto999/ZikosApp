@@ -82,6 +82,48 @@ function tempo(){
     document.getElementById("majmin").innerText="9eme";
  }
 
+ function sus2(){
+    NoteEN =["C","D","E","F","G","A","B"];
+    NoteFR =["DO","RE","MI","FA","SOL","LA","SI"];
+    randomNote = false;
+    NoteDessin=NoteDessinsus2;
+    document.getElementById("majmin").innerText="Sus2 /Add9";
+ }
+
+ function sus4(){
+    NoteEN =["C","D","E","F","G","A","B"];
+    NoteFR =["DO","RE","MI","FA","SOL","LA","SI"];
+    randomNote = false;
+    NoteDessin=NoteDessinsus4;
+    document.getElementById("majmin").innerText="Sus4 /Sus";
+ }
+
+ function _b(){
+    NoteEN =["C","D","E","F","G","A","B"];
+    NoteFR =["DO","RE","MI","FA","SOL","LA","SI"];
+    randomNote = false;
+    NoteDessin=NoteDessin_b;
+    document.getElementById("majmin").innerText="B / #";
+ }
+
+ function b7(){
+    NoteEN =["C","D","E","F","G","A","B"];
+    NoteFR =["DO","RE","MI","FA","SOL","LA","SI"];
+    randomNote = false;
+    NoteDessin=NoteDessinb7;
+    document.getElementById("majmin").innerText="B7 / #7";
+ }
+
+ function bm(){
+    NoteEN =["C","D","E","F","G","A","B"];
+    NoteFR =["DO","RE","MI","FA","SOL","LA","SI"];
+    randomNote = false;
+    NoteDessin=NoteDessinbm;
+    document.getElementById("majmin").innerText="Bm / #m";
+ }
+
+
+
  function random(){
     NoteDessin=NoteDessinRandom;
     NoteAuHasard=Math.floor(Math.random() * 14);
